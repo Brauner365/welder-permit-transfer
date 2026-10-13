@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Welders in Ireland on a General Employment Permit: check if you can move employer without a new permit.">
+<meta property="og:title" content="Welding in Ireland on a General Employment Permit?">
+<meta property="og:description" content="Check in 5 questions if you can transfer your permit to a new employer. Syntech Recruitment.">
+<title>Welder Permit Transfer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: black "welding bay" hero with the offer, then a step-by-step eligibility checker on a white work surface. Single committed brand look (Syntech red / black / white). */
+:root{
+  --red:#E8302A; --red-deep:#C4211C;
+  --ink:#0E0E0F; --ink-2:#1B1B1D; --steel:#5E5F63; --line:#E3E1DF;
+  --paper:#FFFFFF; --paper-2:#F6F5F4; --ok:#1F7A4A; --warn:#B4541A;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:20px}
+a{color:inherit}
+/* hero */
+.hero{background:var(--ink);color:#fff;padding-block:28px 40px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:360px;height:360px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,48,42,.45),rgba(232,48,42,0) 65%);pointer-events:none}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:18px}
+.brand b{background:var(--red);color:#fff;padding:2px 8px}
+.hero h1{font-family:var(--display);font-weight:800;text-transform:uppercase;line-height:.95;
+  font-size:clamp(40px,7vw,76px);margin:28px 0 14px;max-width:16ch;text-wrap:balance;position:relative;z-index:1}
+.hero h1 span{color:var(--red)}
+.hero p.lede{font-size:18px;max-width:58ch;color:#D9D8D6;margin:0 0 24px;position:relative;z-index:1}
+.codes{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;padding:0;list-style:none;position:relative;z-index:1}
+.codes li{font-family:var(--mono);font-size:13px;border:1px solid #3A3A3D;padding:6px 10px;color:#fff;background:var(--ink-2)}
+.codes li em{font-style:normal;color:var(--red)}
+.cta{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:#fff;border:0;font-family:var(--display);
+  font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:20px;padding:14px 22px;cursor:pointer;text-decoration:none;position:relative;z-index:1}
+.cta:hover{background:var(--red-deep)}
+.cta:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outline:3px solid var(--red);outline-offset:2px}
+/* offer strip */
+.offer{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+.offer div{background:var(--paper);padding:20px}
+.offer .k{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--steel)}
+.offer .v{font-family:var(--display);font-weight:800;font-size:30px;line-height:1.05;margin-top:4px;font-variant-numeric:tabular-nums}
+.offer .s{font-size:14px;color:var(--steel);margin-top:2px}
+/* sections */
+section{padding-block:48px}
+h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(30px,4.4vw,44px);line-height:1;margin:0 0 10px;text-wrap:balance}
+.sub{color:var(--steel);max-width:60ch;margin:0 0 28px}
+/* timeline */
+.track{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin:0;padding:0;list-style:none}
+.track li{border-top:4px solid var(--ink);padding-top:12px}
+.track li:last-child{border-color:var(--red)}
+.track .d{font-family:var(--mono);font-size:13px;color:var(--steel)}
+.track h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:22px;margin:4px 0}
+.track p{margin:0;font-size:15px}
+.proof{margin-top:26px;background:var(--paper-2);border-left:4px solid var(--red);padding:14px 16px;font-size:15px}
+.proof b{font-family:var(--mono);font-weight:500}
+/* checker */
+.checker{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.panel{background:var(--paper);border:1px solid var(--line);max-width:720px}
+.bar{display:flex;gap:4px;padding:16px 20px 0}
+.bar i{flex:1;height:5px;background:var(--line)}
+.bar i.on{background:var(--red)}
+.step{padding:20px 20px 24px}
+.step .n{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+.step h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:26px;line-height:1.05;margin:6px 0 6px;text-wrap:balance}
+.step .hint{font-size:14px;color:var(--steel);margin:0 0 16px;max-width:56ch}
+.opts{display:grid;gap:10px}
+.opt{display:flex;gap:12px;align-items:flex-start;border:1.5px solid var(--line);padding:14px;cursor:pointer;background:var(--paper)}
+.opt:hover{border-color:var(--ink)}
+.opt input{margin-top:3px;accent-color:var(--red);width:18px;height:18px;flex:none}
+.opt.sel{border-color:var(--red);background:#FFF5F4}
+.opt span{min-width:0}
+.opt strong{display:block;font-weight:600}
+.opt small{color:var(--steel);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1.5px solid var(--line);padding:9px 12px;cursor:pointer;font-family:var(--mono);font-size:14px;display:flex;gap:8px;align-items:center;background:var(--paper)}
+.chip input{accent-color:var(--red)}
+.chip.sel{border-color:var(--red);background:#FFF5F4}
+.field{display:grid;gap:6px;max-width:280px}
+.field label{font-weight:600;font-size:15px}
+.field input{font:inherit;font-family:var(--mono);padding:11px 12px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink)}
+.nav{display:flex;gap:10px;justify-content:space-between;align-items:center;margin-top:22px;flex-wrap:wrap}
+.btn{font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:18px;padding:11px 18px;border:0;cursor:pointer}
+.btn.go{background:var(--ink);color:#fff}
+.btn.go:hover{background:var(--red)}
+.btn.go:disabled{background:#BDBBB8;cursor:not-allowed}
+.btn.back{background:transparent;color:var(--steel);padding-inline:0}
+.err{color:var(--red-deep);font-size:14px;margin-top:10px;min-height:1em}
+/* result */
+.res{padding:24px 20px}
+.badge{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;color:#fff}
+.badge.ok{background:var(--ok)} .badge.no{background:var(--warn)} .badge.s4{background:var(--ink)}
+.res h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:32px;line-height:1;margin:12px 0 8px;text-wrap:balance}
+.res p{margin:0 0 12px;max-width:58ch}
+.send{margin:16px 0;padding:0;list-style:none;display:grid;gap:6px}
+.send li{display:flex;gap:10px}
+.send li::before{content:"";width:10px;height:10px;background:var(--red);margin-top:7px;flex:none}
+.contact{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:8px;padding:14px;border:1.5px dashed var(--ink)}
+.contact code{font-family:var(--mono);font-size:15px;user-select:all;overflow-wrap:anywhere}
+.copy{font-family:var(--mono);font-size:13px;border:1px solid var(--ink);background:var(--paper);padding:6px 10px;cursor:pointer}
+.summary{font-family:var(--mono);font-size:13px;color:var(--steel);margin-top:14px;white-space:pre-wrap;overflow-wrap:anywhere}
+/* rules */
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.rules div{min-width:0}
+.rules h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:20px;margin:0 0 4px}
+.rules p{margin:0;font-size:15px;color:#333}
+footer{background:var(--ink);color:#BDBBB8;padding-block:28px;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+footer strong{color:#fff}
+@media (prefers-reduced-motion:no-preference){.step,.res{animation:in .25s ease-out}@keyframes in{from{transform:translateY(6px)}to{transform:none}}}
+</style>
+
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><b>Syntech</b> Recruitment</div>
+    <h1>Welding in Ireland on a <span>General Employment Permit?</span></h1>
+    <p class="lede">Move to a new employer without starting a new permit. We run the change of employer application with you and the new employer, and your permit keeps its expiry date.</p>
+    <ul class="codes" aria-label="Processes we are hiring for">
+      <li><em>111</em> SMAW / Stick</li>
+      <li><em>141</em> TIG</li>
+      <li><em>136</em> FCAW</li>
+      <li><em>ASME IX</em> Coded pipe</li>
+      <li><em>6G</em> Position</li>
+      <li>Structural</li>
+    </ul>
+    <a class="cta" href="#check">Check if you can transfer →</a>
+  </div>
+</header>
+
+<div class="offer">
+  <div><div class="k">Rate</div><div class="v">€25 / hr</div><div class="s">Permanent contract</div></div>
+  <div><div class="k">Hours</div><div class="v">39+ / week</div><div class="s">Mon–Fri</div></div>
+  <div><div class="k">Overtime</div><div class="v">1.5× – 2×</div><div class="s">Double from Sat 12pm and Sundays</div></div>
+  <div><div class="k">Pension</div><div class="v">CWPS</div><div class="s">Construction Workers Pension Scheme</div></div>
+  <div><div class="k">Location</div><div class="v">Co. Limerick</div><div class="s">Plus sites across Ireland</div></div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>How the transfer works</h2>
+    <p class="sub">A change of employer is a joint online application with the Department of Enterprise, Tourism and Employment (DETE). You fill in your part, the employer fills in theirs, and both of you sign. We guide both sides through it.</p>
+    <ol class="track">
+      <li><div class="d">Step 1</div><h3>Check and apply</h3><p>Use the checker below, then send us your CV, weld certs and permit details.</p></li>
+      <li><div class="d">Step 2</div><h3>Offer and contract</h3><p>Interview, offer, then a contract signed by you and the employer.</p></li>
+      <li><div class="d">Step 3</div><h3>Joint application</h3><p>We help you and the employer complete and submit it on the DETE portal.</p></li>
+      <li><div class="d">Step 4</div><h3>Permit reissued</h3><p>You start with the new employer once the updated permit is issued, and within one month of it.</p></li>
+    </ol>
+    <p class="proof">Our most recent welder transfer: application opened <b>8 Oct 2026</b>, updated permit issued <b>13 Oct 2026</b>. Processing times vary, so plan around your own case.</p>
+  </div>
+</section>
+
+<section class="checker" id="check">
+  <div class="wrap">
+    <h2>Can you transfer?</h2>
+    <p class="sub">Five quick questions, based on DETE's change of employer rules. Nothing you enter here is sent anywhere.</p>
+    <div class="panel">
+      <div class="bar" id="bar" aria-hidden="true"></div>
+      <div id="stage"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>The rules in plain English</h2>
+    <p class="sub">From DETE's guidance on changing employer under the Employment Permits Act 2024.</p>
+    <div class="rules">
+      <div><h3>9 months first</h3><p>You need at least 9 months since you started on your first employment permit in Ireland.</p></div>
+      <div><h3>Same occupation</h3><p>A General Employment Permit moves to the same type of job. A welder permit moves to a welding job.</p></div>
+      <div><h3>2 months left</h3><p>Your permit must be in force and have at least 2 months left when the application goes in.</p></div>
+      <div><h3>No early start</h3><p>You can't start with the new employer until the updated permit is issued. Starting early can get the application refused.</p></div>
+      <div><h3>Up to 3 moves</h3><p>A permit holder can be granted a maximum of three changes of employer.</p></div>
+      <div><h3>No new labour market test</h3><p>The new employer doesn't need to re-advertise the role first.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Syntech Recruitment</strong> · Specialist engineering and manufacturing recruitment, UK and Ireland</div>
+    <div>stephen@syntechrecruitment.co.uk · 01276 405 870</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const EMAIL="stephen@syntechrecruitment.co.uk";
+  const A={permit:null,occ:null,start:"",end:"",procs:[]};
+  const steps=["permit","occ","start","end","procs"];
+  let i=0;
+  const stage=document.getElementById("stage"), bar=document.getElementById("bar");
+  bar.innerHTML=steps.map(()=>"<i></i>").join("");
+
+  const today=new Date(); today.setHours(0,0,0,0);
+  const addMonths=(d,m)=>{const x=new Date(d);const day=x.getDate();x.setMonth(x.getMonth()+m);if(x.getDate()<day)x.setDate(0);return x;};
+  const fmt=d=>d.toLocaleDateString("en-IE",{day:"numeric",month:"short",year:"numeric"});
+  const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+  function radio(name,opts){
+    return '<div class="opts" role="radiogroup">'+opts.map(o=>
+      `<label class="opt${A[name]===o.v?" sel":""}"><input type="radio" name="${name}" id="${name}-${o.v}" value="${o.v}"${A[name]===o.v?" checked":""}><span><strong>${o.t}</strong>${o.s?`<small>${o.s}</small>`:""}</span></label>`
+    ).join("")+"</div>";
+  }
+  function nav(canBack,ready,label){
+    return `<div class="nav">${canBack?'<button class="btn back" id="back" type="button">← Back</button>':"<span></span>"}<button class="btn go" id="next" type="button"${ready?"":" disabled"}>${label||"Next →"}</button></div><div class="err" id="err" role="alert"></div>`;
+  }
+  function paintBar(){[...bar.children].forEach((b,k)=>b.classList.toggle("on",k<=i));}
+
+  function render(){
+    paintBar();
+    const s=steps[i]; let h='<div class="step">';
+    if(s==="permit"){
+      h+=`<div class="n">Question 1 of 5</div><h3>What are you in Ireland on right now?</h3><p class="hint">Check your permit or IRP card if you're not sure.</p>`+
+      radio("permit",[
+        {v:"gep",t:"General Employment Permit",s:"Issued by DETE for a named employer and job"},
+        {v:"csep",t:"Critical Skills Employment Permit"},
+        {v:"stamp4",t:"Stamp 4",s:"You can already work for any employer"},
+        {v:"other",t:"Something else, or no permit yet"}
+      ])+nav(false,!!A.permit);
+    }
+    if(s==="occ"){
+      h+=`<div class="n">Question 2 of 5</div><h3>Is the job on your permit a welding job?</h3><p class="hint">A General Employment Permit can only move to the same occupation. Welder, pipe welder, welder/fabricator and similar count.</p>`+
+      radio("occ",[{v:"yes",t:"Yes, it's a welding job"},{v:"no",t:"No, it's a different job"},{v:"unsure",t:"Not sure"}])+nav(true,!!A.occ);
+    }
+    if(s==="start"){
+      h+=`<div class="n">Question 3 of 5</div><h3>When did you start work on your first Irish employment permit?</h3><p class="hint">Your very first permit in Ireland, even if you've changed since. An approximate date is fine.</p>
+      <div class="field"><label for="start">Start date</label><input type="date" id="start" value="${esc(A.start)}" max="${today.toISOString().slice(0,10)}"></div>`+nav(true,!!A.start);
+    }
+    if(s==="end"){
+      h+=`<div class="n">Question 4 of 5</div><h3>When does your current permit end?</h3><p class="hint">It's printed on the permit as the end or expiry date.</p>
+      <div class="field"><label for="end">Permit end date</label><input type="date" id="end" value="${esc(A.end)}"></div>`+nav(true,!!A.end);
+    }
+    if(s==="procs"){
+      const P=[["111","SMAW / Stick"],["141","TIG"],["136","FCAW"],["asme","ASME IX coded"],["6g","6G qualified"],["struct","Structural"]];
+      h+=`<div class="n">Question 5 of 5</div><h3>What do you weld?</h3><p class="hint">Tick everything you hold or do day to day.</p><div class="chips">`+
+      P.map(([v,t])=>`<label class="chip${A.procs.includes(v)?" sel":""}"><input type="checkbox" id="p-${v}" value="${v}"${A.procs.includes(v)?" checked":""}>${t}</label>`).join("")+
+      "</div>"+nav(true,A.procs.length>0,"See my result →");
+    }
+    stage.innerHTML=h+"</div>";
+    wire(s);
+  }
+
+  function wire(s){
+    const next=document.getElementById("next"), back=document.getElementById("back");
+    if(back) back.onclick=()=>{i--;render();};
+    stage.querySelectorAll('input[type=radio]').forEach(r=>r.onchange=()=>{A[r.name]=r.value;
+      stage.querySelectorAll(".opt").forEach(o=>o.classList.toggle("sel",o.querySelector("input").checked));next.disabled=false;});
+    stage.querySelectorAll('input[type=checkbox]').forEach(c=>c.onchange=()=>{
+      A.procs=[...stage.querySelectorAll('input[type=checkbox]:checked')].map(x=>x.value);
+      c.parentElement.classList.toggle("sel",c.checked);next.disabled=!A.procs.length;});
+    ["start","end"].forEach(k=>{const el=document.getElementById(k);if(el)el.oninput=()=>{A[k]=el.value;next.disabled=!el.value;};});
+    next.onclick=()=>{
+      if(s==="permit"&&(A.permit==="stamp4"||A.permit==="other"))return result();
+      if(i<steps.length-1){i++;render();}else result();
+    };
+  }
+
+  function copyBtn(){
+    const b=document.getElementById("copy"); if(!b)return;
+    b.onclick=()=>{const done=()=>{b.textContent="Copied";setTimeout(()=>b.textContent="Copy email",1500);};
+      try{navigator.clipboard.writeText(EMAIL).then(done,()=>sel());}catch(e){sel();}
+      function sel(){const r=document.createRange();r.selectNodeContents(document.getElementById("mail"));const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent="Selected, press copy";}
+    };
+  }
+
+  function contactBlock(){
+    return `<div class="contact"><code id="mail">${EMAIL}</code><button class="copy" id="copy" type="button">Copy email</button><a class="copy" href="mailto:${EMAIL}?subject=Welder%20permit%20transfer">Open email</a></div>`;
+  }
+
+  function result(){
+    [...bar.children].forEach(b=>b.classList.add("on"));
+    const names={"111":"SMAW 111","141":"TIG 141","136":"FCAW 136","asme":"ASME IX coded","6g":"6G","struct":"Structural"};
+    let badge,title,body;
+    if(A.permit==="stamp4"){
+      badge='<span class="badge s4">No transfer needed</span>';title="You can apply straight away";
+      body="<p>On Stamp 4 you don't need an employment permit, so there's nothing to transfer. Send us your CV and weld certs and we'll put you forward.</p>";
+    } else if(A.permit==="other"){
+      badge='<span class="badge no">Not this route</span>';title="This route is for permit holders already in Ireland";
+      body="<p>A change of employer only works if you already hold a General or Critical Skills Employment Permit. If you're unsure what you hold, send us a photo of your permit or IRP card and we'll tell you.</p>";
+    } else {
+      const issues=[];
+      if(A.occ==="no") issues.push("A General Employment Permit can only move to the same occupation, so a non-welding permit can't move to a welding job this way.");
+      const start=new Date(A.start), elig=addMonths(start,9);
+      if(elig>today) issues.push(`You reach 9 months on <b>${fmt(elig)}</b>. Get in touch now and we can line things up for that date.`);
+      const end=new Date(A.end), min=addMonths(today,2);
+      if(end<today) issues.push("Your permit end date has passed, so it can't be transferred. Talk to us about your options.");
+      else if(end<min) issues.push(`Your permit ends on <b>${fmt(end)}</b>. It needs at least 2 months left when the application goes in, so talk to us today.`);
+      if(!issues.length){
+        badge='<span class="badge ok">Looks eligible</span>';title="You look eligible to transfer";
+        body=`<p>${A.occ==="unsure"?"Check the job title on your permit is a welding role. Otherwise, b":"B"}ased on your answers you meet DETE's change of employer conditions. Send us the following and we'll come back to you:</p>`;
+      } else {
+        badge='<span class="badge no">Not yet</span>';title="Close, but not yet";
+        body="<p>"+issues.join("</p><p>")+"</p>";
+      }
+    }
+    const summary=A.permit==="gep"||A.permit==="csep"
+      ?`Permit: ${A.permit==="gep"?"General Employment Permit":"Critical Skills Employment Permit"}\nFirst permit start: ${A.start?fmt(new Date(A.start)):"-"}\nPermit ends: ${A.end?fmt(new Date(A.end)):"-"}\nProcesses: ${A.procs.map(p=>names[p]).join(", ")||"-"}`:"";
+    stage.innerHTML=`<div class="res">${badge}<h3>${title}</h3>${body}
+      <ul class="send"><li>Your CV</li><li>Weld certificates and codes (process, position, material)</li><li>A copy of your current permit</li></ul>
+      <p>Email them to:</p>${contactBlock()}
+      ${summary?`<div class="summary">Paste this into your email:\n${esc(summary)}</div>`:""}
+      <div class="nav"><button class="btn back" id="restart" type="button">← Start again</button><span></span></div></div>`;
+    document.getElementById("restart").onclick=()=>{i=0;render();};
+    copyBtn();
+  }
+  render();
+})();
+</script>
+</body>
+</html>
